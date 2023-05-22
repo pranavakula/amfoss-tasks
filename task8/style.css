@@ -1,0 +1,41 @@
+body{
+  background-color: rgb(211, 138, 199);
+  text-align: center;
+}
+#heading{
+  font-size: xx-large;
+  font-family: "Gill Sans", sans-serif;
+  color: rgb(241, 160, 160);
+  text-shadow: 3px 0 #2c0416;
+}
+
+div{
+  display:block;
+}
+
+.arrange{
+  margin: 200px auto;
+}
+
+.container{
+  width:200px;
+  height: 200px;
+  font-size: 150px;
+  font-weight: bolder;
+  display:inline-block;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color:#ca0a60;
+  line-height:1;
+  background-color: rgb(17, 229, 236);
+  text-align: center;
+  border: thick double #eb081b;
+  border-radius: 55px;
+  text-shadow: 3px 0 #e21571;
+  margin:20px;
+}
+
+.container:hover{
+  background-color: rgb(209, 183, 68);
+  border-color: rgb(192, 27, 27);
+  transform: rotate(-3deg);
+}
