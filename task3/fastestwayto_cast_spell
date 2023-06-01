@@ -1,0 +1,8 @@
+n, m = map(int, input().split())
+word_dict = {}
+for _ in range(m):
+    first_lang, second_lang = input().split()
+    word_dict[first_lang] = second_lang
+spell_text = input().split()
+cast_spell = [word_dict[word] if len(word_dict[word]) < len(word) else word for word in spell_text]
+print(" ".join(cast_spell))
