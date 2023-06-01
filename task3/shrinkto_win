@@ -1,0 +1,11 @@
+def solve(n):
+  operations = 0
+  while len(str(n)) > 1:
+    n = sum(int(i) for i in str(n))
+    operations += 1
+  return operations
+def main():
+  n = int(input())
+  print(solve(n))
+if __name__ == "__main__":
+  main()
