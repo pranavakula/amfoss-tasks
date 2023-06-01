@@ -1,0 +1,33 @@
+n = int(input())
+
+points = []
+
+for i in range(n):
+    x, y = map(int, input().split())
+    points.append((x, y))
+
+count = 0
+
+for i in range(n):
+    has_left = False
+    has_right = False
+    has_upper = False
+    has_lower = False
+
+    for j in range(n):
+        if i == j:
+            continue
+
+        if points[j][0] < points[i][0] and points[j][1] == points[i][1]:
+            has_left = True
+        elif points[j][0] > points[i][0] and points[j][1] == points[i][1]:
+            has_right = True
+        elif points[j][0] == points[i][0] and points[j][1] < points[i][1]:
+            has_upper = True
+        elif points[j][0] == points[i][0] and points[j][1] > points[i][1]:
+            has_lower = True
+
+    if has_left and has_right and has_upper and has_lower:
+        count += 1
+
+print(count)
